@@ -6,6 +6,7 @@ New here? Install with one line, then follow the guides in order.
 # macOS / Linux
 curl -fsSL https://almanac.bar/install.sh | bash
 ```
+
 ```bat
 :: Windows (cmd or PowerShell)
 powershell -c "irm https://almanac.bar/install.ps1 | iex"
@@ -22,6 +23,7 @@ powershell -c "irm https://almanac.bar/install.ps1 | iex"
 ## Use it
 
 - [Using Almanac](./user-guide.md): inbox, contacts, pipelines, broadcasts, automations, team
+- [Lead ingestion](./lead-ingestion.md): IndiaMART, JustDial, Google Ads, Meta and webhook leads → contact, deal, instant WhatsApp reply
 - [AI features (bring your own key)](./ai-byok.md): drafts, auto-replies, knowledge base
 
 ## When something's off
