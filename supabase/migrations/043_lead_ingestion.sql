@@ -1,5 +1,5 @@
 -- ============================================================
--- 023_lead_ingestion.sql — Lead ingestion (external lead sources)
+-- 043_lead_ingestion.sql — Lead ingestion (external lead sources)
 --
 -- `lead_sources` — one row per external feed (IndiaMART, JustDial,
 -- Google Ads lead forms, Meta leadgen, or a generic signed webhook).

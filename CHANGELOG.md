@@ -16,7 +16,7 @@ Notable changes to Almanac.
 - Admin-managed `GET/POST/PATCH/DELETE /api/lead-sources` endpoints; the
   webhook key is shown only once, on create or explicit rotation.
 - Account-scoped `lead_sources` and `leads` tables with RLS
-  (migration `023_lead_ingestion.sql`), plus a lead-source quickstart in
+  (migration `043_lead_ingestion.sql`), plus a lead-source quickstart in
   `docs/lead-ingestion.md`.
 
 ## 2026-09-25: first release

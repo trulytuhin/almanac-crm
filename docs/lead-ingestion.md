@@ -144,7 +144,7 @@ names. Viewer role and up.
 
 ## Database
 
-Migration `023_lead_ingestion.sql` adds:
+Migration `043_lead_ingestion.sql` adds:
 
 - `lead_sources` — one row per source: provider, secret `webhook_key`
   (unique), optional hashed `verify_secret_hash`, default pipeline /
