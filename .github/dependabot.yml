@@ -1,0 +1,17 @@
+version: 2
+updates:
+  # npm dependencies are updated together with regular Almanac updates,
+  # so only GitHub Actions are checked here.
+
+  # Almanac's own workflows in .github/workflows/.
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 3
+    reviewers:
+      - trulytuhin
+    labels:
+      - dependencies
+      - github-actions

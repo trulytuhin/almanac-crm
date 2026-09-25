@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability (private)
+    url: https://github.com/trulytuhin/almanac-crm/security/advisories/new
+    about: Please don't file security issues in public. Use the private disclosure flow.
+  - name: Setup and "how do I..." questions
+    url: https://almanac.bar/guide
+    about: The guide covers install, Supabase, WhatsApp, AI keys and troubleshooting.
+  - name: Email support
+    url: https://github.com/trulytuhin/almanac-crm/blob/main/.github/SUPPORT.md
+    about: Stuck? Write to tuhin@almanac.bar.

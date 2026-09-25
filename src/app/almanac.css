@@ -1,0 +1,110 @@
+/* ============================================================
+ * ALMANAC BRAND
+ *
+ * Loaded after globals.css (see layout.tsx), so these blocks win
+ * over the base surfaces with the same selectors. Kept in its own
+ * file so the brand can change without touching the theme system in
+ * globals.css.
+ *
+ *   Paper  #F4F1E9    Ink    #1C1913    Rule  #DED7C7
+ *   Muted  #4E4839    Accent #0A5030
+ *
+ * Light mode is paper and ink. Dark mode is the same palette
+ * inverted: warm ink surfaces, paper text. Every text/background
+ * pair below clears WCAG AA (4.5:1); the tightest is muted text on
+ * a muted chip at 4.8:1.
+ * ============================================================ */
+
+/* ---- MODE: neutral surfaces ---- */
+
+html[data-mode="light"] {
+  --background: #f4f1e9;
+  --foreground: #1c1913;
+  --card: #fbf9f4;
+  --card-2: #f7f4ec;
+  --card-foreground: #1c1913;
+  --popover: #fbf9f4;
+  --popover-foreground: #1c1913;
+  --secondary: #ece7db;
+  --secondary-foreground: #2a261e;
+  --muted: #ece7db;
+  --muted-foreground: #6b6452;
+  --accent: #ebe5d6;
+  --accent-foreground: #2a261e;
+  --border: #ded7c7;
+  --input: #ded7c7;
+  --chart-3: #8a9a7b;
+  --chart-4: #c9b99a;
+  --chart-5: #e2d8c3;
+  --sidebar: #efebe1;
+  --sidebar-foreground: #1c1913;
+  --sidebar-accent: #e6e0d1;
+  --sidebar-accent-foreground: #1c1913;
+  --sidebar-border: #ded7c7;
+}
+
+:root,
+html[data-mode="dark"] {
+  --background: #151310;
+  --foreground: #ede8dc;
+  --card: #1c1a16;
+  --card-2: #211f1a;
+  --card-foreground: #ede8dc;
+  --popover: #1c1a16;
+  --popover-foreground: #ede8dc;
+  --secondary: #26231d;
+  --secondary-foreground: #ede8dc;
+  --muted: #26231d;
+  --muted-foreground: #a39c8a;
+  --accent: #2a2720;
+  --accent-foreground: #ede8dc;
+  --border: #2f2b24;
+  --input: #2f2b24;
+  --chart-3: #6f7d63;
+  --chart-4: #5a5243;
+  --chart-5: #3a352c;
+  --sidebar: #181612;
+  --sidebar-foreground: #ede8dc;
+  --sidebar-accent: #26231d;
+  --sidebar-accent-foreground: #ede8dc;
+  --sidebar-border: #2f2b24;
+}
+
+/* ---- ACCENT: Almanac green ----
+ * Deep green on paper; a lighter green on ink, where #0A5030 would
+ * sink into the background. chart-2 is ochre so two-series charts
+ * read as green vs. gold rather than two greens. */
+
+html[data-theme="almanac"] {
+  --primary: #0a5030;
+  --primary-foreground: #f4f1e9;
+  --primary-hover: #0d6a40;
+  --primary-soft: rgb(10 80 48 / 0.1);
+  --primary-soft-2: rgb(10 80 48 / 0.18);
+  --ring: #0a5030;
+  --chart-1: #0a5030;
+  --chart-2: #b7862f;
+  --sidebar-primary: #0a5030;
+  --sidebar-primary-foreground: #f4f1e9;
+  --sidebar-ring: #0a5030;
+}
+
+html[data-theme="almanac"][data-mode="dark"] {
+  --primary: #46b07f;
+  --primary-foreground: #0e1a13;
+  --primary-hover: #5cc292;
+  --primary-soft: rgb(70 176 127 / 0.12);
+  --primary-soft-2: rgb(70 176 127 / 0.22);
+  --ring: #46b07f;
+  --chart-1: #46b07f;
+  --chart-2: #d6a54c;
+  --sidebar-primary: #46b07f;
+  --sidebar-primary-foreground: #0e1a13;
+  --sidebar-ring: #46b07f;
+}
+
+/* Wordmark and display type. Aleo is loaded in layout.tsx. */
+.font-brand {
+  font-family: var(--font-brand), Charter, "Iowan Old Style", Georgia, serif;
+  letter-spacing: -0.012em;
+}
